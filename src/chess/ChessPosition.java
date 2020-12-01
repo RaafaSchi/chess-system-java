@@ -28,10 +28,10 @@ public class ChessPosition {
 	}
 
 	protected static ChessPosition fromPosition(Position position) {
-		return new ChessPosition((char)('a' + position.getColumn()), 8 - position.getRow());
+		return new ChessPosition((char) ('a' + position.getColumn()), 8 - position.getRow());
 	}
-	
-	@Override 
+
+	@Override
 	public String toString() {
 		return "" + column + row;
 	}
